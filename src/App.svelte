@@ -1,45 +1,36 @@
 <script>
-  import svelteLogo from './assets/svelte.svg'
-  import Counter from './lib/Counter.svelte'
+  import InputForm from "./lib/InputForm.svelte";
 </script>
 
 <main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank"> 
-      <img src="/vite.svg" class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank"> 
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Vite + Svelte</h1>
+  <h1>BetterSort</h1>
+  <p>A simple tool to better sort through a YouTube channel's videos.</p>
 
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
+  <InputForm />
 </main>
+<footer>
+  fueled by <a href="https://www.santamonicabrewworks.com/"
+    >Santa Monica Brew Works inclined IPA</a
+  >.
+</footer>
 
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
+  main {
+    text-align: center;
+    padding: 1rem;
+    max-width: calc(240px + 50vw);
+    margin: 0 auto auto auto;
   }
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
+
+  footer {
+    margin-top: auto;
   }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .read-the-docs {
-    color: #888;
+
+  h1 {
+    color: var(--c-red);
+    font-size: 4rem;
+    font-weight: 100;
+    margin: 1rem 0;
+    text-align: center;
   }
 </style>
